@@ -27,7 +27,11 @@ exports.getUserInfo = function(req,res){
     });
 };
 
+<<<<<<< HEAD
 //更新用户基本信息的处理函数1
+=======
+//更新用户基本信息的处理函数
+>>>>>>> 3eb87f8d2a0a71f713399cb48162c31e4be518f9
 exports.updateUserInfo = function(req,res){
     const sqlStr = 'update ev_users set ? where id=?'
     db.query(sqlStr,[req.body,req.body.id],function(err,results){
