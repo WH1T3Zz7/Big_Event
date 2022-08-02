@@ -46,11 +46,7 @@ exports.regUser = function(req,res){
     });
 };
 
-<<<<<<< HEAD
 //登录的处理函数1
-=======
-//登录的处理函数
->>>>>>> 3eb87f8d2a0a71f713399cb48162c31e4be518f9
 exports.login = (req,res) => {
     const userinfo = req.body;
     const sqlStr = 'select * from ev_users where username=?';
@@ -67,11 +63,7 @@ exports.login = (req,res) => {
             console.log(compareResult);
             return res.cc('登录失败！')
         };
-<<<<<<< HEAD
         //登录成功，生成 Token 字符串1
-=======
-        //登录成功，生成 Token 字符串
->>>>>>> 3eb87f8d2a0a71f713399cb48162c31e4be518f9
         //剔除密码和头像的值剔除完毕之后，user 中只保留了用户的 id, username, nickname, email 这四个属性的值
         const user = {...results[0],password:'',user_pic:''};
         //生成ToKen字符串
