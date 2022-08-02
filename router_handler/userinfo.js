@@ -27,7 +27,7 @@ exports.getUserInfo = function(req,res){
     });
 };
 
-//更新用户基本信息的处理函数
+//更新用户基本信息的处理函数1
 exports.updateUserInfo = function(req,res){
     const sqlStr = 'update ev_users set ? where id=?'
     db.query(sqlStr,[req.body,req.body.id],function(err,results){

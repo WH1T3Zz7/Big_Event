@@ -46,7 +46,7 @@ exports.regUser = function(req,res){
     });
 };
 
-//登录的处理函数
+//登录的处理函数1
 exports.login = (req,res) => {
     const userinfo = req.body;
     const sqlStr = 'select * from ev_users where username=?';
