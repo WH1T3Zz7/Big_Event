@@ -63,7 +63,7 @@ exports.login = (req,res) => {
             console.log(compareResult);
             return res.cc('登录失败！')
         };
-        //登录成功，生成 Token 字符串
+        //登录成功，生成 Token 字符串1
         //剔除密码和头像的值剔除完毕之后，user 中只保留了用户的 id, username, nickname, email 这四个属性的值
         const user = {...results[0],password:'',user_pic:''};
         //生成ToKen字符串
